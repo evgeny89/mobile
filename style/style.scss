@@ -53,11 +53,18 @@ body {
 
   .send {
     @include btn_style;
+
+    &:hover {
+      box-shadow: 0 4px 15px rgba(27, 170, 235, 0.45);
+    }
   }
 
   .call {
-
     @include btn_call;
+
+    &:hover {
+      box-shadow: 0 4px 20px rgba(255, 204, 0, 0.55);
+    }
   }
 
   .phone {
@@ -71,6 +78,66 @@ body {
   .slider__btn {
     @include slider_link;
   }
+
+  .menu-list {
+    display: none;
+  }
+
+  #modal {
+    display: none;
+    position: fixed;
+    width: 358px;
+    height: 336px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    align-items: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    padding-bottom: 48px;
+
+    #close-modal {
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        font-size: 0;
+        padding: 5px;
+        width: 15px;
+        top: 20px;
+        border-bottom: 1px solid $blue;
+      }
+
+      &:after {
+        right: 16px;
+        transform: rotate(45deg);
+      }
+
+      &:before {
+        right: 24px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    h6 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    input {
+      color: $blue;
+      border-color: $blue;
+
+      &::placeholder {
+        color: $blue;
+      }
+    }
+  }
 }
 
 a {
@@ -83,6 +150,10 @@ li {
 
 .center {
   padding: 0 calc(50% - 160px);
+}
+
+.logo {
+  width: 100px;
 }
 
 /* end reset */
@@ -100,10 +171,6 @@ li {
 
     & > a {
       display: block;
-
-      .logo {
-        width: 100px;
-      }
     }
 
     .menu {
@@ -179,7 +246,6 @@ li {
             @include label_agree;
 
             color: #9E9E9E;
-            padding-left: 6px;
 
             &:after {
               border-color: #9E9E9E;
@@ -546,8 +612,6 @@ li {
       @include label_agree;
 
       color: #9E9E9E;
-      padding-left: 6px;
-
 
       &:after {
         border-color: #9E9E9E;
@@ -564,27 +628,34 @@ li {
   &__menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 24px 15px;
 
-    a {
+    & > a {
       display: flex;
+      padding-right: 20px;
     }
   }
 
   &__copy {
     padding: 0 15px;
     border-top: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .footer__box {
-      display: flex;
-      justify-content: space-between;
-
-      p {
-        font-size: 0.27rem;
-        margin: 10px auto;
-      }
+    p {
+      font-size: 0.27rem;
+      margin: 10px 0;
     }
 
+    span {
+      padding-right: 10px;
+    }
+
+    &__social {
+      display: none;
+    }
   }
 }
 

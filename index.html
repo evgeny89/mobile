@@ -10,37 +10,60 @@
     <script>
         function showMenu(num = 0) {
 
-            if (document.documentElement.clientWidth < 768) {
-                if (num === 1) {
-                    document.getElementById("mobile-menu").style.display = "block";
-                    document.getElementById("filter").style.display = "block";
-                }
-                if (num === 0) {
-                    document.getElementById("mobile-menu").style.display = "none";
-                    document.getElementById("filter").style.display = "none";
-                }
+            if (document.documentElement.clientWidth < 768 && num === 1) {
+                document.getElementById("mobile-menu").style.display = "block";
+                document.getElementById("filter").style.display = "block";
+            }
+            if (num === 0) {
+                document.getElementById("mobile-menu").style.display = "none";
+                document.getElementById("filter").style.display = "none";
+            }
+            if (num === 2) {
+                document.getElementById("modal").style.display = "block";
+                document.getElementById("filter").style.display = "block";
+            }
+            if (num === 3) {
+                document.getElementById("modal").style.display = "none";
+                document.getElementById("filter").style.display = "none";
             }
         }
 
         window.addEventListener("resize", function () {
-            showMenu(0)
+            showMenu()
         }, false);
     </script>
 </head>
 <body>
+<div id="modal">
+    <a href="#" id="close-modal" onclick="showMenu(3)"></a>
+    <h6>Оставьте заявку, и мы Вам перезвоним!</h6>
+    <input type="text" class="phone" placeholder="Ваше имя">
+    <input type="number" class="phone" placeholder="Ваш телефон">
+    <button class="send" onclick="showMenu(3)">заказать звонок</button>
+</div>
+<!-- end modal -->
 <header class="header center">
     <a name="main"></a>
     <div class="head__line">
         <a href="index.html"><img src="img/logo-white.png" alt="seng it" class="logo"></a>
         <div class="menu">
+            <ul class="menu-list">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#step">Описание</a></li>
+                <li><a href="#advan">Преимущества</a></li>
+                <li><a href="#rew">Отзывы</a></li>
+                <li><a href="#log">Партнёры</a></li>
+                <li><a href="#guar">Гарантии</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
             <img src="img/mobile-menu-white.svg" alt="menu" class="hide-to-tab" onclick="showMenu(1)">
-            <div class="menu__box" id="mobile-menu">
+            <div class="menu__box hide-to-tab" id="mobile-menu">
                 <!-- меню сайта -->
-                <div class="head_line hide-to-tab">
+                <div class="head_line">
                     <a href="index.html" onclick="showMenu(0)"><img src="img/logo-black.png" alt="logo"></a>
                     <a class="close" onclick="showMenu(0)"></a>
                 </div>
-                <ul class="menu-list" onclick="showMenu(0)">
+                <ul id="menu-list" onclick="showMenu(0)">
                     <li><a href="#main">Главная</a></li>
                     <li><a href="#step">Описание</a></li>
                     <li><a href="#advan">Преимущества</a></li>
@@ -49,7 +72,7 @@
                     <li><a href="#guar">Гарантии</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
-                <div class="menu__call hide-to-tab">
+                <div class="menu__call">
                     <h6>ОСТАЛИСЬ ВОПРОСЫ?</h6>
                     <form action="#">
                         <input type="number" class="phone" placeholder="Ваш телефон">
@@ -58,7 +81,7 @@
                         <label for="agree-menu">Я согласен на обработку персональных данных</label>
                     </form>
                 </div>
-                <div class="social hide-to-tab">
+                <div class="social">
                     <a href="#" onclick="showMenu(0)">
                         <img src="img/vk.svg" alt="vk">
                     </a>
@@ -76,7 +99,7 @@
     <div class="head__underline">
         <h2>ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h2>
         <h5>А посылка доедет сама</h5>
-        <button class="send">отправить посылку</button>
+        <button class="send" onclick="showMenu(2)">отправить посылку</button>
     </div>
 </header>
 <!-- end header -->
@@ -88,7 +111,7 @@
     <div class="about__text">
         <p>С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши услуги бесплатны, так как мы получаем
             бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</p>
-        <button class="send">отправить посылку</button>
+        <button class="send" onclick="showMenu(2)">отправить посылку</button>
     </div>
 </div>
 <!-- end about -->
@@ -115,7 +138,7 @@
 <!-- end steps -->
 <div class="footer__steps center">
     <h5>Мы берём все заботы по доставке на себя!</h5>
-    <button class="send">отправить посылку</button>
+    <button class="send" onclick="showMenu(2)">отправить посылку</button>
 </div>
 <!-- end footer__steps -->
 <div class="callback center">
@@ -123,9 +146,9 @@
         <h3>хотите мы вам перезвоним?</h3>
         <p>Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
     </div>
-    <form action="#">
+    <form>
         <input type="number" class="phone" placeholder="Ваш телефон">
-        <button class="call">заказать звонок</button>
+        <button class="call" type="button">заказать звонок</button>
         <input type="checkbox" id="agree">
         <label for="agree">Я согласен на обработку персональных данных</label>
     </form>
@@ -313,23 +336,40 @@
 <footer class="footer center">
     <div class="footer__call">
         <h6>ОСТАЛИСЬ ВОПРОСЫ?</h6>
-        <form action="#">
+        <form>
             <input type="number" class="phone" placeholder="Ваш телефон">
-            <button class="send">заказать звонок</button>
+            <button class="send" type="button">заказать звонок</button>
             <input type="checkbox" id="agree-too">
             <label for="agree-too">Я согласен на обработку персональных данных</label>
         </form>
     </div>
     <div class="footer__menu">
-        <a href="index.html"><img src="img/logo-black.png" alt="logo"></a>
-        <img src="img/mobile-menu-black.svg" alt="menu" onclick="showMenu(1);">
+        <a href="index.html"><img src="img/logo-black.png" alt="logo" class="logo"></a>
+        <img class="hide-to-tab" src="img/mobile-menu-black.svg" alt="menu" class="hide-to-tab" onclick="showMenu(1);">
+        <ul class="menu-list">
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#step">Описание</a></li>
+            <li><a href="#advan">Преимущества</a></li>
+            <li><a href="#rew">Отзывы</a></li>
+            <li><a href="#log">Партнёры</a></li>
+            <li><a href="#guar">Гарантии</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
     </div>
     <div class="footer__copy">
-        <div class="footer__box">
-            <p>&copy;&nbsp;Сами копипастим и&nbsp;вам разрешаем</p>
-            <p>2020</p>
-            <p>Задизайнено мной</p>
+        <p>&copy;&nbsp;Сами копипастим и вам разрешаем</p>
+        <div class="footer__copy__social">
+            <a href="#">
+                <img src="img/vk.svg" alt="vk">
+            </a>
+            <a href="#">
+                <img src="img/insta.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="img/facebook.svg" alt="facebook">
+            </a>
         </div>
+        <p><span>2020</span> Задизайнено мной</p>
     </div>
 </footer>
 <!-- end footer -->
