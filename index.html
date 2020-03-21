@@ -3,11 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>Send It</title>
+    <script>
+        function showMenu(num = 0) {
+
+            if (document.documentElement.clientWidth < 768) {
+                if (num === 1) {
+                    document.getElementById("mobile-menu").style.display = "block";
+                    document.getElementById("filter").style.display = "block";
+                }
+                if (num === 0) {
+                    document.getElementById("mobile-menu").style.display = "none";
+                    document.getElementById("filter").style.display = "none";
+                }
+            }
+        }
+
+        window.addEventListener("resize", function () {
+            showMenu(0)
+        }, false);
+    </script>
 </head>
 <body>
-
+<header class="header center">
+    <a name="main"></a>
+    <div class="head__line">
+        <a href="index.html"><img src="img/logo-white.png" alt="seng it" class="logo"></a>
+        <div class="menu">
+            <img src="img/mobile-menu-white.svg" alt="menu" class="hide-to-tab" onclick="showMenu(1)">
+            <div class="menu__box" id="mobile-menu">
+                <!-- меню сайта -->
+                <div class="head_line hide-to-tab">
+                    <a href="index.html" onclick="showMenu(0)"><img src="img/logo-black.png" alt="logo"></a>
+                    <a class="close" onclick="showMenu(0)"></a>
+                </div>
+                <ul class="menu-list" onclick="showMenu(0)">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#step">Описание</a></li>
+                    <li><a href="#advan">Преимущества</a></li>
+                    <li><a href="#rew">Отзывы</a></li>
+                    <li><a href="#log">Партнёры</a></li>
+                    <li><a href="#guar">Гарантии</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="menu__call hide-to-tab">
+                    <h6>ОСТАЛИСЬ ВОПРОСЫ?</h6>
+                    <form action="#">
+                        <input type="number" class="phone" placeholder="Ваш телефон">
+                        <button class="send" onclick="showMenu(0)">заказать звонок</button>
+                        <input type="checkbox" id="agree-menu">
+                        <label for="agree-menu">Я согласен на обработку персональных данных</label>
+                    </form>
+                </div>
+                <div class="social hide-to-tab">
+                    <a href="#" onclick="showMenu(0)">
+                        <img src="img/vk.svg" alt="vk">
+                    </a>
+                    <a href="#" onclick="showMenu(0)">
+                        <img src="img/insta.svg" alt="instagram">
+                    </a>
+                    <a href="#" onclick="showMenu(0)">
+                        <img src="img/facebook.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            <div id="filter"></div>
+        </div>
+    </div>
+    <div class="head__underline">
+        <h2>ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h2>
+        <h5>А посылка доедет сама</h5>
+        <button class="send">отправить посылку</button>
+    </div>
+</header>
+<!-- end header -->
+<div class="about center">
+    <div class="about__img">
+        <img src="img/group.png" alt="logistic">
+    </div>
+    <h6>Мы – агрегатор служб доставки</h6>
+    <div class="about__text">
+        <p>С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши услуги бесплатны, так как мы получаем
+            бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</p>
+        <button class="send">отправить посылку</button>
+    </div>
+</div>
+<!-- end about -->
+<section class="steps center">
+    <a name="step"></a>
+    <article><img src="img/Asset1.jpg" alt="step1">
+        <h4>Шаг 1</h4>
+        <p>Придумайте что и кому отправить</p>
+    </article>
+    <article><img src="img/Asset2.jpg" alt="step2">
+        <h4>Шаг 2</h4>
+        <p>Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос, уточнит все
+            необходимые данные</p>
+    </article>
+    <article><img src="img/Asset3.jpg" alt="step3">
+        <h4>Шаг 3</h4>
+        <p>К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
+    </article>
+    <article><img src="img/Asset4.jpg" alt="step4">
+        <h4>Шаг 4</h4>
+        <p>Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
+    </article>
+</section>
+<!-- end steps -->
+<div class="footer__steps center">
+    <h5>Мы берём все заботы по доставке на себя!</h5>
+    <button class="send">отправить посылку</button>
+</div>
+<!-- end footer__steps -->
+<div class="callback center">
+    <div>
+        <h3>хотите мы вам перезвоним?</h3>
+        <p>Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+    </div>
+    <form action="#">
+        <input type="number" class="phone" placeholder="Ваш телефон">
+        <button class="call">заказать звонок</button>
+        <input type="checkbox" id="agree">
+        <label for="agree">Я согласен на обработку персональных данных</label>
+    </form>
+</div>
+<!-- end callback -->
+<section class="review center">
+    <a name="rew"></a>
+    <h3>ОТЗЫВЫ</h3>
+    <div class="slider__btn">
+        <a href="#" class="btn-next"></a>
+        <a href="#" class="btn-prew"></a>
+    </div>
+    <div class="slider">
+        <article>
+            <img src="img/darya.jpg" alt="darya" class="photo">
+            <div class="info">
+                <h4>Дарья</h4>
+                <h6>La Intuicion</h6>
+                <p>Посылка: товары</p>
+                <p>Откуда: Москва</p>
+                <p>Куда: Нижневартовск</p>
+            </div>
+            <p class="post">Отличный и качественный сервис.
+                Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены,
+                что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши
+                потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).</p>
+        </article>
+        <article>
+            <img src="img/elena.jpg" alt="darya" class="photo">
+            <div class="info">
+                <h4>Елена</h4>
+                <h6>Global Logic</h6>
+                <p>Посылка: товары</p>
+                <p>Откуда: Москва</p>
+                <p>Куда: Калининград</p>
+            </div>
+            <p class="post">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
+                доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор –
+                всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру
+                за отзывчивость.</p>
+        </article>
+    </div>
+</section>
+<!-- end review -->
+<section class="advantages center">
+    <a name="advan"></a>
+    <h3>НАШИ ПРЕИМУЩЕСТВА</h3>
+    <div class="advantages__icons">
+        <article>
+            <div class="img">
+                <img src="img/icons/free.png" alt="free">
+            </div>
+            <p>Бесплатный сервис</p>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/list.png" alt="list">
+            </div>
+            <p>Огромный выбор вариантов доставки</p>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/star.png" alt="star">
+            </div>
+            <p>4 параметра лучшего предложения</p>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/hand.png" alt="hand">
+            </div>
+            <p>Удобство заказа</p>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/head.png" alt="head">
+            </div>
+            <p>Online-поддержка</p>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/search.png" alt="search">
+            </div>
+            <p>Единый номер отслеживания</p>
+        </article>
+    </div>
+</section>
+<!-- end advantages -->
+<section class="guarantees center">
+    <a name="guar"></a>
+    <h3>НАШИ ГАРАНТИИ</h3>
+    <div class="slider__btn">
+        <a href="#" class="btn-next"></a>
+        <a href="#" class="btn-prew"></a>
+    </div>
+    <div class="guarantees__box">
+        <article>
+            <div class="img">
+                <img src="img/icons/folder.png" alt="folder">
+            </div>
+            <h6>Страховка отправлений</h6>
+            <p>Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под
+                пристальным вниманием менеджеров SendIt</p>
+            <button class="send">подробнее</button>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/box.png" alt="box">
+            </div>
+            <h6>Прозрачность расчетов</h6>
+            <p>Чтобы узнать точную стоимость отправления вам не нужно связываться с каждой курьерской службой в
+                отдельности
+                и сравнивать полученные предложения, просто воспользуйтесь нашим сервисом </p>
+            <button class="send">подробнее</button>
+        </article>
+        <article>
+            <div class="img">
+                <img src="img/icons/delivery.png" alt="delivery">
+            </div>
+            <h6>Лучшие поставщики</h6>
+            <p>Мы работаем с самыми надежными и известными операторами доставки. Проверка надежности курьерской
+                компании,
+                экспертная оценка качества предоставляемых услуг</p>
+            <button class="send">подробнее</button>
+        </article>
+    </div>
+</section>
+<!-- end guarantees -->
+<section class="faq center">
+    <a name="faq"></a>
+    <h3>ОСТАЛИСЬ СОМНЕНИЯ?</h3>
+    <div class="container">
+        <article>
+            <input type="checkbox" id="check1">
+            <label for="check1">На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!</label>
+            <p>Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+                доставки, которые будут доставлять вашу посылку</p>
+        </article>
+        <article><input type="checkbox" id="check2"><label for="check2">Мне необходимо совершить доставку по нескольким
+            адресам,
+            нужно много чего заполнять</label>
+            <p>Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+                доставки, которые будут доставлять вашу посылку</p>
+        </article>
+        <article><input type="checkbox" id="check3"><label for="check3">Вы не сможете доставить посылку за
+            границу</label>
+            <p>Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+                доставки, которые будут доставлять вашу посылку</p>
+        </article>
+        <article><input type="checkbox" id="check4"><label for="check4">Вы не занимаетесь такими простыми грузами, как
+            мебель</label>
+            <p>Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+                доставки, которые будут доставлять вашу посылку</p>
+        </article>
+        <article><input type="checkbox" id="check5"><label for="check5">Я отправляю вместе с коллегами, мы можем легко
+            запутаться
+            где чьё</label>
+            <p>Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+                доставки, которые будут доставлять вашу посылку</p>
+        </article>
+        <article><input type="checkbox" id="check6"><label for="check6">Нужно заполнять кучу документов</label>
+            <p>Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+                доставки, которые будут доставлять вашу посылку</p>
+        </article>
+    </div>
+</section>
+<!-- end faq -->
+<div class="slider center">
+    <a name="log"></a>
+    <div class="slider__btn">
+        <a href="#" class="btn-next"></a>
+        <a href="#" class="btn-prew"></a>
+    </div>
+    <div class="container">
+        <a href="#"><img src="img/logists/bringo.png" alt="bringo"></a>
+        <a href="#"><img src="img/logists/cdek.png" alt="cdek"></a>
+        <a href="#"><img src="img/logists/city_express.png" alt="city express"></a>
+        <a href="#"><img src="img/logists/dpd.png" alt="dpd"></a>
+        <a href="#"><img src="img/logists/pony.png" alt="pony express"></a>
+        <a href="#"><img src="img/logists/spsr.png" alt="spsr"></a>
+        <a href="#"><img src="img/logists/tnt.png" alt="tnt"></a>
+        <a href="#"><img src="img/logists/ups.png" alt="ups"></a>
+    </div>
+</div>
+<!-- end logistic -->
+<footer class="footer center">
+    <div class="footer__call">
+        <h6>ОСТАЛИСЬ ВОПРОСЫ?</h6>
+        <form action="#">
+            <input type="number" class="phone" placeholder="Ваш телефон">
+            <button class="send">заказать звонок</button>
+            <input type="checkbox" id="agree-too">
+            <label for="agree-too">Я согласен на обработку персональных данных</label>
+        </form>
+    </div>
+    <div class="footer__menu">
+        <a href="index.html"><img src="img/logo-black.png" alt="logo"></a>
+        <img src="img/mobile-menu-black.svg" alt="menu" onclick="showMenu(1);">
+    </div>
+    <div class="footer__copy">
+        <div class="footer__box">
+            <p>&copy;&nbsp;Сами копипастим и&nbsp;вам разрешаем</p>
+            <p>2020</p>
+            <p>Задизайнено мной</p>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
 </body>
 </html>

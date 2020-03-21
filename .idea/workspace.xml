@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa71e39e-b069-400e-b499-0b9792d37ab6" name="Default Changelist" comment="" />
+    <list default="true" id="aa71e39e-b069-400e-b499-0b9792d37ab6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/head-img-tab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/hand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Vectormobile-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,19 +33,32 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Z7FhV9JeJGiSCP8GE951RnGS6a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/sass.cmd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Professional" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="screen and (max-width: 1440px) and (min-width: 768px)" />
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,20 +71,39 @@
       <option name="presentableId" value="Default" />
       <updated>1584182344115</updated>
       <workItem from="1584182345308" duration="1671000" />
+      <workItem from="1584206331081" duration="7345000" />
+      <workItem from="1584259393127" duration="4514000" />
+      <workItem from="1584268047535" duration="6304000" />
+      <workItem from="1584296102304" duration="4439000" />
+      <workItem from="1584341408034" duration="23241000" />
+      <workItem from="1584381987296" duration="1420000" />
+      <workItem from="1584385007574" duration="114000" />
+      <workItem from="1584430513877" duration="18157000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="594" y="298" key="EditFileWatcherDialog" timestamp="1584182602475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="298" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584182602475" />
-    <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1584182600769">
+    <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1584274296600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584182600769" />
+    <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584274296600" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1584430514594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584430514594" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1584435136598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584435136598" />
   </component>
 </project>
