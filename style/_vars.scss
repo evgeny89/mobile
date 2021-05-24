@@ -48,7 +48,7 @@ $img_size: 86px;
 
 /* headers media */
 
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   @mixin headers2 {
     font-size: 1.1rem;
   } // 44px
@@ -71,6 +71,10 @@ $img_size: 86px;
   font-size: 0.38rem;
   line-height: 0.44rem;
   text-align: left;
+
+  @media screen and (min-width: 1440px){
+    font-size: 0.32rem;
+  }
 }
 
 @mixin btn_style {
@@ -85,6 +89,10 @@ $img_size: 86px;
   font-size: 16px;
   margin-bottom: 20px;
   font-weight: bold;
+
+  @media screen and (min-width: 1440px) {
+      width: 360px;
+  }
 }
 
 @mixin btn_call {
@@ -113,6 +121,10 @@ $img_size: 86px;
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 360px;
+  }
 }
 
 @mixin check_style {
@@ -132,6 +144,8 @@ $img_size: 86px;
   vertical-align: center;
   padding-bottom: 16px;
   margin-left: 5px;
+  text-align: left;
+  padding-left: 25px;
 
   &:before {
     position: absolute;
@@ -172,6 +186,9 @@ $img_size: 86px;
   }
 
   .btn-next {
+    &:hover:after {
+      border-color: $blue;
+    }
 
     &:after {
       position: absolute;
@@ -183,6 +200,7 @@ $img_size: 86px;
       border-bottom: 2px solid #C4C4C4;
       border-left: 2px solid #C4C4C4;
       transform: rotate(45deg);
+
     }
   }
 

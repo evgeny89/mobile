@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa71e39e-b069-400e-b499-0b9792d37ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/head-img-tab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/_vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Vectormobile-menu.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.scss" afterDir="false" />
@@ -79,6 +74,13 @@
       <workItem from="1584381987296" duration="1420000" />
       <workItem from="1584385007574" duration="114000" />
       <workItem from="1584430513877" duration="18157000" />
+      <workItem from="1584454965215" duration="2896000" />
+      <workItem from="1584521194263" duration="686000" />
+      <workItem from="1584547323575" duration="7783000" />
+      <workItem from="1584613037670" duration="245000" />
+      <workItem from="1584616586959" duration="2505000" />
+      <workItem from="1584633334481" duration="3740000" />
+      <workItem from="1584721359052" duration="6578000" />
     </task>
     <servers />
   </component>
@@ -97,10 +99,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584274296600" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1584430514594">
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1584721368414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584430514594" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584721368414" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584547323528" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1584435136598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
